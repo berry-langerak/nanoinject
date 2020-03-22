@@ -1,0 +1,29 @@
+values:
+  scalar_value: 'it is like magic'
+
+services:
+  no_arguments:
+    class: NoArguments
+    module: tests.services.no_arguments
+
+  simple_argument:
+    class: SimpleArgument
+    module: tests.services.simple_argument
+
+  with_argument:
+    class: WithArgument
+    module: tests.services.with_argument
+    dependencies:
+      - simple_argument
+
+  not_shared:
+    class: NotShared
+    module: tests.services.not_shared
+    shared: False
+
+  with_scalar_argument:
+    class: WithScalarArgument
+    module: tests.services.with_scalar_argument
+    dependencies:
+      - simple_argument
+      - value:scalar_value
