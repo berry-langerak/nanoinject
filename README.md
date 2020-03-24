@@ -1,7 +1,7 @@
 # Nanoinject
 
 Nanoinject is a terrifically small and simple dependency injection container
-for Python 3.5+. Its' key features:
+for Python 3.6+. Its' key features:
 
 * Easy enough to use in five minutes.
 * Configurable in code or config files.
